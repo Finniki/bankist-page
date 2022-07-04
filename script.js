@@ -59,7 +59,6 @@ header.append(message);
 const btnCloseCookie = document.querySelector(".btn--close--cookie");
 btnCloseCookie.addEventListener("click", function () {
   message.remove();
-  // message.parentElement.removeChild(message); -DOM Traversing
 });
 
 //////////////////////////////////////////////////////
@@ -211,7 +210,7 @@ const slider = function () {
   };
 
   init();
-  //
+
   const nextSlide = function () {
     if (curSlide === maxSlide) {
       curSlide = 0;
@@ -231,7 +230,6 @@ const slider = function () {
     goToSlide(curSlide);
     activateDot(curSlide);
   };
-  //
   btnRight.addEventListener("click", nextSlide);
 
   btnLeft.addEventListener("click", prevSlide);
